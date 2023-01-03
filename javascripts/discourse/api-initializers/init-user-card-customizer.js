@@ -48,8 +48,15 @@ export default {
           appEvents.on("user-card:show", handleUserCardShow(debug));
           appEvents.on("user-card:after-show", handleUserCardAfterShow(debug));
 
+          appEvents.on('page:changed', data => {
+            if(debug){  
+              console.log('page:changed');    
+              console.log(data);        
+            }
+          });
+
           if(debug){          
-            console.log('running');        
+            console.log('last');        
           }
 
           /*
