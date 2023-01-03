@@ -23,7 +23,7 @@ export default Component.extend({
 
     this._super(...arguments);
 
-    this.showOnlyToAdmins = settings?.enable_modal_only_for_admins; //from settings.yml
+    this.showOnlyToAdmins = settings?.enable_component_only_for_admins; //from settings.yml
     this.debugForAdmins = settings?.enable_debug_for_admins; //from settings.yml
     this.debugFooter = this.debugForAdmins && settings?.enable_modal_footer_internal_debug; //from settings.yml
     this.debug4All = settings?.enable_debug_for_all; //from settings.yml    

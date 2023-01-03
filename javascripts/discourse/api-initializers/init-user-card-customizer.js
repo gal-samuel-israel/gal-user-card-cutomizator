@@ -26,7 +26,7 @@ export default {
           console.log('admin: ' + currentUser.admin); 
         }
 
-        var showOnlyToAdmins = settings.enable_modal_only_for_admins; //make this false to enable component all users
+        var showOnlyToAdmins = settings.enable_component_only_for_admins; //make this false to enable component all users
         var isAdmin = (currentUser.admin)        
         runThis = (showOnlyToAdmins && isAdmin || !showOnlyToAdmins);
 
