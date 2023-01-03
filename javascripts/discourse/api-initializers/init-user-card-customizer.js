@@ -38,8 +38,15 @@ export default {
             }
           });
 
+          const handleUserCardAfterShow = ((debug)=>{
+            if(debug){          
+              console.log('handleUserCardAfterShow');  
+            }
+          });
+
           const appEvents = container.lookup("service:app-events");
           appEvents.on("user-card:show", handleUserCardShow(debug));
+          appEvents.on("user-card:after-show", handleUserCardAfterShow(debug));
 
           if(debug){          
             console.log('running');        
