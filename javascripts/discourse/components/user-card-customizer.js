@@ -33,7 +33,7 @@ export default Component.extend({
     if(this.debug4All){ this.debug = true; }
 
     if(this.debug){
-      console.log('user-car-customizer init:');
+      console.log('user-card-customizer init:');
     }
 
     if(!this.currentUser.admin && this.showOnlyToAdmins){

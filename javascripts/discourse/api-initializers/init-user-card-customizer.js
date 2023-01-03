@@ -20,7 +20,7 @@ export default {
         //const user = container.lookup("service:current-user");
 
         if(debug){          
-          console.log('initializer:');
+          console.log('user-card-customizer initializer:');
           //console.log(user);
           //console.log(currentUser.user_option);
           console.log('admin: ' + currentUser.admin); 
